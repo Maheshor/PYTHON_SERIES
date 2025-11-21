@@ -48,6 +48,7 @@ print(numbers)
 
 # set is collection of unique items in an specific order which doesnt allows duplicate data and supports the data in any order
 setNumbers={1,2,3,4,4} #Output is {1,2,3,4} as the duplicated data are removed
+setNumbers.add(7)
 print(setNumbers)
 print(type(setNumbers))
 
@@ -60,3 +61,46 @@ students={
 print(students)
 print(type(students))
 
+#range is another datatype that represents the squence of the numbers
+numRange=range(10)
+print(type(numRange))
+print(numRange)
+
+# another one is we have set types which is 
+# 1. set -> It is mutable or changeable similar to example of above set
+# 2. frozenset -> It is immutable which is not changeable once declared
+
+fs=frozenset({1,2,3,4,5})
+print(type(fs))
+# fs.add(6) This will throw and error as its not mutable
+
+# bool returns the boolaean value i.e True or False
+x=10
+y=20
+print(x>y) #Output: False
+
+# Binary Types
+# 1. bytes -> Immutable Values   "b" keyword is used here
+
+bytesExample=b"hello"
+print(bytesExample)
+print(bytesExample[1])
+
+# 2. bytearray -> Collection of multiple bytes here
+bytearrayExample= bytearray(b"Max")
+print(bytearrayExample)
+# print(bytearrayExample[2])
+
+bytearrayExample[2]=105 
+print(bytearrayExample)
+
+# memoryview let's us change the value of an bytearray without making the copy of the data
+
+data=bytearray(b'namaste')
+mvExample= memoryview(data)
+print(mvExample)
+
+# None keyword is used when there are no any values known to us
+noneData=None
+data=45
+print(data)
