@@ -7,3 +7,4 @@ textFloat= float(input("Enter any floating value: "))
 
 info= "My name is {name} and age is {age}".format(name=text,age=textInt)
 print(info)
+
